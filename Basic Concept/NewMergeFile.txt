@@ -1,0 +1,7 @@
+d100
+prestige
+Nandita
+point
+true
+ xyz
+c
