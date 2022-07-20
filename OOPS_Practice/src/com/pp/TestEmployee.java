@@ -11,9 +11,9 @@ public class TestEmployee {
 		System.out.println(e.getSalary());
 		System.out.println(e.getAnnualSalary());
 		System.out.println(e.raiseSalary(10));
-		e.setSalary(2000);
+		//e.setSalary(2000);
 		System.out.println(e.getAnnualSalary());
-		System.out.println(e.raiseSalary(10));
+		//System.out.println(e.raiseSalary(10));
 		
 
 	}

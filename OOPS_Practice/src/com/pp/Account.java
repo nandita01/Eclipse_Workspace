@@ -45,12 +45,8 @@ public class Account {
 	{
 		if(amount <= this.balance) {
 			this.debit(amount);        
-			account.credit(amount); // ni smj AAyi ab aa gya na yeh wali line ni aayi 
-			// ye account vha se pass kiya hua h vo wala hai. tera account usme amount credit kiya h ok
-			// itta dimag lgana tha ki ek k account se debit hoga aur dusre me credit
-			// mene search kiya hua k dekh phli tab close kr di aa gya ab but vo  aa gya pkkaha ab analize krugi ee to aa gya
+			account.credit(amount); 
 		}	
-		
 		else
 			System.out.println("Amount exceeded balance");
 		return balance;

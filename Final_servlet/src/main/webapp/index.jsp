@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="Controller" method="get">
+<form action="Controller" method="post">
 Number1: <input type="text" name="t1">
 Number2: <input type="text" name="t2">
 <input type="submit">

@@ -11,12 +11,22 @@
   	<servlet-class>com.pp.add</servlet-class>
   	
   </servlet>
+  <servlet>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<display-name>SecondServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.pp.SecondServlet</servlet-class>
+  </servlet>
   
   <servlet-mapping>
  
   	<servlet-name>addController</servlet-name>
   	<url-pattern>/add</url-pattern>
   	
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>SecondServlet</servlet-name>
+  	<url-pattern>/SecondServlet</url-pattern>
   </servlet-mapping>
   
 </web-app>
