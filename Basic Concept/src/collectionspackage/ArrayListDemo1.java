@@ -7,67 +7,33 @@ import java.util.List;
 public class ArrayListDemo1 {
 
 	public static void main(String[] args) {
-		List a=new ArrayList();
-	//	ArrayList a=new ArrayList();
-		a.add(18);
-		a.add(21);
-		a.add(18);
-		a.add(null);
-		a.add("Nandita");
+		// REVISION PRACTICE CODE
+		//@@@@@@@@ DUPLICATES ARE ALLOWED AND INSERTION ORDER MUST PRESERVED @@@@@@@
+		//ArrayList<String> al = new ArrayList<>();  TYPE SAFE ONLY STRING ADDED
+		ArrayList al = new ArrayList();  // NO TYPE SAFE ALL ELEMENTS ADDED
+		al.add("Nandita");
+		al.add(11);
+		al.add("Rathore");
+		al.add(21);
+		al.add(null);
+		al.add(21);
+		System.out.println("SIZE = "+al.size());
+		System.out.println(al.contains("Nandita Rathore")); // @@ ITEMS IS THERE OR NOT
+		System.out.println(al.contains(21));
+		System.out.println(al.isEmpty());	// CHECK FOR EMPTY
+ 		System.out.println(al);
+ 		al.set(0, "Adwik"); // 0 index ko remove krke set kr dega
+ 		System.out.println(al);
+ 		al.add(0,"Motu");
+ 		System.out.println(al);// 0 index pr set kr dega or bki ko shift kr dega
+// 		al.clear(); 	// CLEAR ALL ELEMENTS
+// 		System.out.println(al);
+ 		
+ 		System.out.println("@@@@@@@ AFTER ADDING ALL ELEMENT IN LINKEDLIST @@@@@@");
+ 		LinkedList ll = new LinkedList();
+ 		ll.addAll(al);
+ 		System.out.println(ll);
 	
-		//System.out.println(a);
-		
-		//LinkedList l=new LinkedList(a);
-		
-		ArrayList l=new ArrayList(a);
-		l.add(45);
-		l.add(0,"go");
-		l.set(0,"hyy");
-		System.out.println(a.containsAll(l));
-		
-		
-		
-		
-		ArrayList l1=new ArrayList(l);
-		
-		//System.out.println(l1.containsAll(l));
-		
-		/*
-		 * System.out.println(l); l.remove(4); System.out.println(l); l.remove(1);
-		 System.out.println(l);
-	//System.out.println(l.containsAll(l));
-		System.out.println(l.containsAll(a));
-		//System.out.println(a.containsAll(a));
-		//System.out.println(a.containsAll(l));
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		/*
-		 * //l.removeAll(a); System.out.println(l); l.removeFirst();
-		 * System.out.println(l); l.remove(a); l.rem
-		 * 
-		 * System.out.println(l); l.addFirst(12);
-		 */	//System.out.println(l);
-		 
-		
-		
-		
-		/*
-		 * //a.remove(0); a.remove(1); System.out.println(a); a.add(1,30);
-		 * System.out.println(a); a.add("rathore"); System.out.println(a);
-		 * a.add(2,null); System.out.println(a); a.remove(null); System.out.println(a);
-		 * a.remove("Nandita"); System.out.println(a); a.remove(30);
-		 * System.out.println(a);
-		 */
-		
 	}
 
 }
